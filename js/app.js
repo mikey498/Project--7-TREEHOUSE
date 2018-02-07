@@ -38,12 +38,13 @@ function addPhraseToDisplay(arr){
     for(var i = 0; i < arr.length; i++){
         var li = document.createElement('li');
         li.textContent = arr[i].toUpperCase();
+
         if(arr[i].match(/[a-z]/i)){
-            li.className = 'letter';
-        }
+            li.className = 'letter'; }
+
+             else { li.className = 'space';}
+
         document.querySelector('#phrase ul').appendChild(li);
-        
-      
     }
 }
 
