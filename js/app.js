@@ -43,11 +43,7 @@ function addPhraseToDisplay(arr){
         }
         document.querySelector('#phrase ul').appendChild(li);
         
-        if (array[i] !== ' ') {
-            listItem.className = 'letter';
-        } else {
-            listItem.className = 'space';
-        }
+      
     }
 }
 
